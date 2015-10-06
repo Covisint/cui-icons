@@ -8,36 +8,40 @@ module.exports = function(grunt) {
           jQuery: true
         }
       }
-    },
-svgtoolkit: {
-  dist: {
-    options: {
-      generatePNGs: true,
-      style: 'src/css/themes/blue.css',
-      colorize: '#808000',
-      debug: false
-    },
-    files: [
-      {
-        expand: true,
-        cwd: 'dist/svg/',
-        src: '**/*.svg',
-        dest: 'dist/icons'
+    },   
+    svgmerge: {
+      files: {
+        src: ['./'],
+        dest: 'svg_output'
       }
-    ]
-  },     
-    watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint','svgtoolkit']
+    },
+    browserSync: {
+      dev: {
+        bsFiles: {
+            src : [
+                '*.html',
+                '*.js',
+                '*.css'
+            ]
+        },
+        options: {
+          online: true,
+          server:{
+            baseDir: './'
+          }
+        }
+      }
     }
-  }});
+
+
+  });
 
 
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-svg-toolkit');
+  grunt.loadNpmTasks('grunt-svg-merge');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('default', ['jshint','svgtoolkit']);
+  grunt.registerTask('default', ['jshint','svgmerge','browserSync']);
 
 };

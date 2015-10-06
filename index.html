@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.svg-holder{
+		border:6px solid skyblue;
+		padding:1%;
+		border-radius:6px;
+	}
+
+	.svg{
+		fill:skyblue;
+		width:160px;
+		transition:all 200ms ease-in-out;
+	}
+
+	.svg-holder:hover{
+		background:skyblue;
+	}
+
+	.svg-holder:hover>.svg{
+		fill:white;
+	}
+
+	</style>
+</head>
+<body>
+	<svg class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
+		<use xlink:href="svg_output/svg_upload/svg_upload-out.svg#unlock" class="svg"/>
+	</svg>
+
+	<svg class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
+		<use xlink:href="svg_output/svg_upload/svg_upload-out.svg#unlock2" class="svg"/>
+	</svg>
+</body>
+</html>
