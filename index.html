@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -26,13 +26,13 @@
 
 	</style>
 </head>
-<body>
-	<svg class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
-		<use xlink:href="svg_output/svg_upload/svg_upload-out.svg#unlock" class="svg"/>
+<body ng-controller="ctrl">
+	<svg ng-repeat="svg in list" class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
+		<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>
 	</svg>
 
-	<svg class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
-		<use xlink:href="svg_output/svg_upload/svg_upload-out.svg#unlock2" class="svg"/>
-	</svg>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
