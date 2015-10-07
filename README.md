@@ -23,6 +23,6 @@ Instead of creating one Illustrator files for each icon and exporting to SVG in 
 ## Adding Icons to the Covisint UI Icon Library
 
 1. Add your icons to `src/resources/svg`.
-2. (from here on this will have to be done by jenkins) Run `grunt svgmerge` from the root directory. This will read the svgs and concatenate them into 1 svg file that will go in dist/svg.
-3. (from here on this is optional, for demo purposes) Run `node generateSvgList.js` from the root. This checks the src/resources/svg folder and outputs a file to the the root called svgList with a list of the svg files.
+2. <b>(from here on this will have to be done by jenkins)</b> Run `grunt svgmerge` from the root directory. This will read the svgs and concatenate them into 1 svg file that will go in dist/svg.
+3. <b>(from here on this is optional, for demo purposes)</b> Run `node generateSvgList.js` from the root. This checks the src/resources/svg folder and outputs a file to the the root called svgList with a list of the svg files.
 4. Run `grunt` to get a visual demo of all your svgs.
