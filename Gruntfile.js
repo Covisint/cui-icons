@@ -11,8 +11,8 @@ module.exports = function(grunt) {
     },   
     svgmerge: {
       files: {
-        src: ['./'],
-        dest: 'svg_output'
+        src: ['src/resources'],
+        dest: 'dist'
       }
     },
     browserSync: {

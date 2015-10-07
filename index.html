@@ -4,10 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+	div{
+		display:inline-block;
+		position:relative;
+	}
+
 	.svg-holder{
 		border:6px solid skyblue;
-		padding:1%;
+		padding:20px;
 		border-radius:6px;
+		margin-right:10px;
 	}
 
 	.svg{
@@ -24,13 +30,25 @@
 		fill:white;
 	}
 
+	span{
+		position:absolute;
+		color:skyblue;
+		top:100%;
+		left:50%;
+		transform:translate(-50%,0);
+		font-size:20px;
+	}
+
 	</style>
 </head>
 <body ng-controller="ctrl">
-	<svg ng-repeat="svg in list" class="svg-holder" width="150" height="150" viewBox="0 0 50 50">
-		<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>
-	</svg>
-
+	<div ng-repeat="svg in list">
+		<svg class="svg-holder" width="160" height="160" viewBox="0 0 50 50">
+			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
+		</svg>
+		<span>{{svg.split('#')[1]}}</span>
+	</div>
+	
 
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="app.js"></script>
