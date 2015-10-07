@@ -1,8 +1,8 @@
 {
   "name": "cui-icons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/thirdwavellc/cui-icons",
-  "description": "",
+  "description": "Concatenate a folder of svgs.",
   "main": "",
   "moduleType": [],
   "license": "MIT",
@@ -11,7 +11,9 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    ".DS_Store",
+    "**/.DS_Store"
   ],
   "devDependencies": {
     "angular": "~1.4.7"
