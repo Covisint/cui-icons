@@ -16,7 +16,7 @@
 					if(index>-1){
 						svgList[i]=svgList[i].split('.')[0];
 					}
-					svgList[i]='svg_output/svg_upload/svg_upload-out.svg#' + svgList[i];
+					svgList[i]='dist/svg/svg-out.svg#' + svgList[i];
 				}
 				$scope.list=svgList;
 			})
