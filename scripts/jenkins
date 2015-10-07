@@ -1,4 +1,6 @@
 #!/bin/bash
+nvm use
+npm install
 grunt svgmerge
 node generateSvgList.js
 git add -A
