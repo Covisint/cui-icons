@@ -1,0 +1,19 @@
+683 error Error: ENOENT, lstat '/media/jnk-data02/jenkins/workspace/covisint/cui-project/cui-icons/node_modules/grunt-svg-merge/node_modules/svg-merge/node_modules/libxmljs-easy/node_modules/libxmljs/vendor/libxml/relaxng.c'
+684 error If you need help, you may report this log at:
+684 error     <http://github.com/isaacs/npm/issues>
+684 error or email it to:
+684 error     <npm-@googlegroups.com>
+685 error System Linux 3.2.0-84-generic
+686 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+687 error cwd /media/jnk-data02/jenkins/workspace/covisint/cui-project/cui-icons
+688 error node -v v0.10.17
+689 error npm -v 1.3.8
+690 error path /media/jnk-data02/jenkins/workspace/covisint/cui-project/cui-icons/node_modules/grunt-svg-merge/node_modules/svg-merge/node_modules/libxmljs-easy/node_modules/libxmljs/vendor/libxml/relaxng.c
+691 error fstream_path /media/jnk-data02/jenkins/workspace/covisint/cui-project/cui-icons/node_modules/grunt-svg-merge/node_modules/svg-merge/node_modules/libxmljs-easy/node_modules/libxmljs/vendor/libxml/relaxng.c
+692 error fstream_type File
+693 error fstream_class FileWriter
+694 error code ENOENT
+695 error errno 34
+696 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/writer.js:284:26
+696 error fstream_stack Object.oncomplete (fs.js:107:15)
+697 verbose exit [ 34, true ]
