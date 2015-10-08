@@ -3,22 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+	body,html { font-size: 12px; margin: 0; padding: 20px;}
 	div{
 		display:inline-block;
 		position:relative;
+		margin-bottom:20px;
+		width:19%;
+		margin-right:1%;
 	}
 
 	.svg-holder{
-		border:6px solid skyblue;
-		padding:20px;
-		border-radius:6px;
-		margin-right:10px;
+		border: solid skyblue;
+		border-width: 0.5rem;
+		border-radius:1rem;
+		position:relative;
+		width:100%;
+		height:100%;
+		padding:1rem;
+		box-sizing:border-box;
 	}
 
 	.svg{
 		fill:skyblue;
-		width:160px;
 		transition:all 200ms ease-in-out;
 	}
 
@@ -34,16 +42,18 @@
 		position:absolute;
 		color:skyblue;
 		top:100%;
-		left:50%;
-		transform:translate(-50%,0);
+		left:0;
+		right:0;
+		text-align:center;
 		font-size:20px;
+		font-weight:bold;
 	}
 
 	</style>
 </head>
 <body ng-controller="ctrl">
 	<div ng-repeat="svg in list">
-		<svg class="svg-holder" width="160" height="160" viewBox="0 0 50 50">
+		<svg class="svg-holder" viewBox="-3 -11 160 160">
 			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
 		</svg>
 		<span>{{svg.split('#')[1]}}</span>
