@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="covisint-logo-with-tagline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 638.7436 153.9912" enable-background="new 0 0 638.7436 153.9912" xml:space="preserve">
-<g>
+<g id="covisint-logo-with-tagline">
 	<g>
 		<path fill="none" d="M68.2822,74.1347c-1.7637,2.1719-3.7661,4.1309-5.9536,5.877c2.1875,1.7422,4.1899,3.707,5.9536,5.8799
 			c1.7598-2.1729,3.7622-4.1377,5.9502-5.8799C72.0444,78.2656,70.042,76.3066,68.2822,74.1347z"/>
