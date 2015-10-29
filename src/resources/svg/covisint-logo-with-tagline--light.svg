@@ -4,7 +4,7 @@
 <svg version="1.1" id="covisint-logo-with-tagline--light"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 638.7436 153.2393"
 	 enable-background="new 0 0 638.7436 153.2393" xml:space="preserve">
-<g>
+<g id="covisint-logo-with-tagline--light">
 	<g>
 		<path fill="none" d="M68.2822,74.1338c-1.7637,2.1719-3.7661,4.1309-5.9536,5.8769c2.1875,1.7422,4.1899,3.7071,5.9536,5.8799
 			c1.7598-2.1728,3.7622-4.1377,5.9502-5.8799C72.0444,78.2647,70.042,76.3057,68.2822,74.1338z"/>
