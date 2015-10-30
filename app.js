@@ -5,20 +5,39 @@
 	angular
 	.module('app',[])
 	.factory('getSvgList',['$http',function($http){
-		return $http.get('svgList');
+		return {
+			icons : function(){
+				return $http.get('iconList');
+			},
+			logos: function(){
+				return $http.get('logoList');
+			}
+		}
 	}])
 	.controller('ctrl',['getSvgList','$scope',function(getSvgList,$scope){
 		this.init=function(){
-			getSvgList.then(function(res){
-				var svgList=res.data.split(',');
-				for(var i=0;i<svgList.length;i++){
-					var index = svgList[i].indexOf('.svg');
+			getSvgList.icons().then(function(res){
+				var iconList=res.data.split(',');
+				for(var i=0;i<iconList.length;i++){
+					var index = iconList[i].indexOf('.svg');
 					if(index>-1){
-						svgList[i]=svgList[i].split('.')[0];
+						iconList[i]=iconList[i].split('.')[0];
 					}
-					svgList[i]='dist/svg/svg-out.svg#' + svgList[i];
+					iconList[i]='dist/icons/icons-out.svg#' + iconList[i];
 				}
-				$scope.list=svgList;
+				$scope.iconList=iconList;
+			})
+
+			getSvgList.logos().then(function(res){
+				var logoList=res.data.split(',');
+				for(var i=0;i<logoList.length;i++){
+					var index = logoList[i].indexOf('.svg');
+					if(index>-1){
+						logoList[i]=logoList[i].split('.')[0];
+					}
+					logoList[i]='dist/logos/logos-out.svg#' + logoList[i];
+				}
+				$scope.logoList=logoList;
 			})
 		}
 

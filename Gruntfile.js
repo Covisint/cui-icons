@@ -1,14 +1,20 @@
 module.exports = function(grunt) {
-
-  grunt.initConfig({
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        globals: {
-          jQuery: true
-        }
+  require('load-grunt-tasks')(grunt);
+  grunt.initConfig({  
+    copy: {
+      index: {
+        src: 'index.html',
+        dest: 'build/index.html'
+      },
+      svgs: {
+        src: 'dist/**/*.svg',
+        dest: 'build/'
+      },
+      svgList: {
+        src: ['logoList','iconList'],
+        dest: 'build/'
       }
-    },   
+    },
     svgmerge: {
       files: {
         src: ['src/resources'],
@@ -30,25 +36,51 @@ module.exports = function(grunt) {
             baseDir: './'
           }
         }
+      },
+      demo: {
+        bsFiles: {
+            src : [
+                '*.html',
+                '*.js',
+                '*.css'
+            ]
+        },
+        options: {
+          watchTask: false,
+          online: true,
+          server:{
+            baseDir: 'build/'
+          }
+        }
       }
     },
-    copy: {
-      index: {
-        src: 'index.html',
-        dest: 'build/index.html'
+    useminPrepare: {
+      html: './index.html',
+      options: {
+        src: './',
+        dest: './build'
       }
+    },
+    usemin: {
+      options: {
+        assetsDirs: ['./build']
+      },
+      css: ['./build/assets/css/**.*.css'],
+      js: ['./build/assets/js/**.*.js'],
+      html: ['./build/index.html']
+    },
+    exec: {
+      generate: 'node generateSvgList.js'
     }
-
-
   });
 
 
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-svg-merge');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('default', ['jshint','svgmerge','browserSync']);
-  grunt.registerTask('build', ['useminPrepare','concat:generated','cssmin:generated','uglify:generated','filerev','usemin']);
-
+  grunt.registerTask('default', ['svgmerge','exec:generate','browserSync:dev']);
+  grunt.registerTask('build', ['svgmerge','exec:generate','copy:index','copy:svgs','copy:svgList','useminPrepare','concat:generated','uglify:generated','usemin']);
+  grunt.registerTask('demo',['browserSync:demo']);
 };

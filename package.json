@@ -5,6 +5,7 @@
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5",
+    "grunt-exec": "^0.4.6",
     "grunt-svg-toolkit": "^0.1.1"
   },
   "devDependencies": {

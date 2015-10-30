@@ -5,32 +5,71 @@
 	<title>Cui-icons</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-	.svg-holder {
-		display: inline-block;
-		overflow: hidden;
-		margin: 0 auto;
-		position: relative;
+	html{
+		background:#DDD;
+		padding:20px;
+	}
+
+	div{
+		position:relative;
+	}
+
+	h2{
+		color:#333;
 	}
 
 	.svg-holder {
 		width: 6.875rem;
 		padding: 0.5rem;
 		margin: 0.2rem;
+		margin-bottom:20px;
 		max-height: 160px;
 		position: relative;
 	}
 
 	.svg {
-		fill: black;
+		fill: #333;
+	}
+
+	.logo-holder {
+		width: 12.875rem;
+		padding: 1rem;
+		margin: 0.2rem;
+		margin-bottom:20px;
+		max-height: 320px;
+		position: relative;
+	}
+
+	hr{
+		margin:30px 0px;
+	}
+
+	span{
+		position:absolute;
+		top:100%;
+		transform:translate(0,-20px);
+		width:100%;
+		text-align:center;
+		color:#333;
 	}
 
 	</style>
 </head>
 <body ng-controller="ctrl">
-	<div ng-repeat="svg in list" style="display:inline-block" ng-hide="svg.indexOf('covisint-logo')>-1">
+	<h2>Icons</h2>
+	<div ng-repeat="svg in iconList" style="display:inline-block">
 		<svg class="svg-holder" viewBox="0 0 48 48">
 			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
 		</svg>
+		<span>{{svg.split('#')[1]}}</span>
+	</div>
+	<hr/>
+	<h2>Logos</h2>
+	<div ng-repeat="svg in logoList" style="display:inline-block">
+		<svg class="logo-holder" viewBox="0 0 640 124">
+			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
+		</svg>
+		<span>{{svg.split('#')[1]}}</span>
 	</div>
 	<!-- build:js assets/js/app.js -->
 	<script src="bower_components/angular/angular.js"></script>
