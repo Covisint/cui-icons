@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. ~/.nvm/nvm.sh
-nvm use
 npm install
 grunt svgmerge
 node generateSvgList.js
