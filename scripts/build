@@ -1,10 +1,9 @@
 #!/bin/bash
 
+. ~/.nvm/nvm.sh
+nvm use
 npm install
 grunt svgmerge
 node generateSvgList.js
 grunt build
 mvn clean deploy -U
-
-git add -A
-git diff-index --quiet --cached HEAD || git commit -am "Updates Published by Jenkins (Build ${BUILD_NUMBER})"

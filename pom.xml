@@ -35,6 +35,7 @@
       <plugin>
           <groupId>br.com.kibutx</groupId>
           <artifactId>slack-maven-plugin</artifactId>
+          <version>1.1.2</version>
           <executions>
               <execution>
                   <id>slack</id>
@@ -75,6 +76,6 @@
   <organization>
     <name>Covisint</name>
   </organization>
-  <name>CUI Styleguide</name>
-  <description>The "living style guide" for use by Covisint Product Apps.</description>
+  <name>CUI Icon Library</name>
+  <description>The collection of icons and SVGs for use by Covisint Product Apps.</description>
 </project>
