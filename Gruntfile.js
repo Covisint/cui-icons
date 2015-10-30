@@ -31,6 +31,12 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    copy: {
+      index: {
+        src: 'index.html',
+        dest: 'build/index.html'
+      }
     }
 
 
@@ -43,5 +49,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('default', ['jshint','svgmerge','browserSync']);
+  grunt.registerTask('build', ['useminPrepare','concat:generated','cssmin:generated','uglify:generated','filerev','usemin']);
 
 };

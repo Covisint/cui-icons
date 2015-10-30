@@ -4,10 +4,10 @@
 
 	angular
 	.module('app',[])
-	.factory('getSvgList',function($http){
+	.factory('getSvgList',['$http',function($http){
 		return $http.get('svgList');
-	})
-	.controller('ctrl',function(getSvgList,$scope){
+	}])
+	.controller('ctrl',['getSvgList','$scope',function(getSvgList,$scope){
 		this.init=function(){
 			getSvgList.then(function(res){
 				var svgList=res.data.split(',');
@@ -24,11 +24,11 @@
 
 		this.init();
 		
-	})
-	.filter('svgIconCardHref', function ($sce) {
+	}])
+	.filter('svgIconCardHref',['$sce',function ($sce) {
 	    return function(svg) {
 	      return $sce.trustAsResourceUrl(svg);
 	    };
-	  });
+	}]);
 
 })(angular)
