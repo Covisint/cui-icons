@@ -1,0 +1,7 @@
+#!/bin/bash
+
+npm install
+grunt svgmerge
+node generateSvgList.js
+grunt build
+mvn clean deploy -U
