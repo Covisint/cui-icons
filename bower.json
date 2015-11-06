@@ -1,10 +1,9 @@
 {
   "name": "cui-icons",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/thirdwavellc/cui-icons",
-  "description": "Concatenate a folder of svgs.",
-  "main": "",
-  "moduleType": [],
+  "description": "Svg package for CUI products.",
+  "main": "dist/",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -13,7 +12,19 @@
     "test",
     "tests",
     ".DS_Store",
-    "**/.DS_Store"
+    "**/.DS_Store",
+    "src",
+    "scripts",
+    "app.js",
+    "assembly.xml",
+    "covisit-icon-test.ai",
+    "generateSvgList.js",
+    "Gruntfile.js",
+    "iconList",
+    "index.html",
+    "logoList",
+    "package.json",
+    "pom.xml"
   ],
   "devDependencies": {
     "angular": "~1.4.7"
