@@ -59,7 +59,7 @@
 	<h2>Icons</h2>
 	<div ng-repeat="svg in iconList" style="display:inline-block">
 		<svg class="svg-holder" viewBox="0 0 48 48">
-			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
+			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>
 		</svg>
 		<span>{{svg.split('#')[1]}}</span>
 	</div>
@@ -67,10 +67,18 @@
 	<h2>Logos</h2>
 	<div ng-repeat="svg in logoList" style="display:inline-block">
 		<svg class="logo-holder" viewBox="0 0 640 124">
-			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>			
+			<use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>
 		</svg>
 		<span>{{svg.split('#')[1]}}</span>
 	</div>
+  <hr/>
+  <h2>Font-awesome</h2>
+  <div ng-repeat="svg in fontAwesomeList" style="display:inline-block">
+    <svg class="logo-holder" viewBox="0 0 216 146">
+      <use xlink:href="{{svg | svgIconCardHref}}" class="svg"/>
+    </svg>
+    <span>{{svg.split('#')[1]}}</span>
+  </div>
 	<!-- build:js assets/js/app.js -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="app.js"></script>

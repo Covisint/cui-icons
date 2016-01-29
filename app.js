@@ -11,6 +11,9 @@
 			},
 			logos: function(){
 				return $http.get('logoList');
+			},
+			fontAwesome: function(){
+				return $http.get('fontAwesomeList');
 			}
 		}
 	}])
@@ -26,7 +29,7 @@
 					iconList[i]='dist/icons/icons-out.svg#' + iconList[i];
 				}
 				$scope.iconList=iconList;
-			})
+			});
 
 			getSvgList.logos().then(function(res){
 				var logoList=res.data.split(',');
@@ -38,11 +41,23 @@
 					logoList[i]='dist/logos/logos-out.svg#' + logoList[i];
 				}
 				$scope.logoList=logoList;
-			})
+			});
+
+			getSvgList.fontAwesome().then(function(res){
+				var fontAwesomeList=res.data.split(',');
+				for(var i=0;i<fontAwesomeList.length;i++){
+					var index = fontAwesomeList[i].indexOf('.svg');
+					if(index>-1){
+						fontAwesomeList[i]=fontAwesomeList[i].split('.')[0];
+					}
+					fontAwesomeList[i]='dist/fontAwesomes/font-awesome-out.svg#' + fontAwesomeList[i];
+				}
+				$scope.fontAwesomeList=fontAwesomeList;
+			});
 		}
 
 		this.init();
-		
+
 	}])
 	.filter('svgIconCardHref',['$sce',function ($sce) {
 	    return function(svg) {

@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
-  grunt.initConfig({  
+  grunt.initConfig({
     copy: {
       index: {
         src: 'index.html',
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         dest: 'build/'
       },
       svgList: {
-        src: ['logoList','iconList'],
+        src: ['logoList','iconList','fontAwesomeList'],
         dest: 'build/'
       }
     },
@@ -73,12 +73,6 @@ module.exports = function(grunt) {
       generate: 'node generateSvgList.js'
     }
   });
-
-
-
-  grunt.loadNpmTasks('grunt-svg-merge');
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['svgmerge','exec:generate','browserSync:dev']);
   grunt.registerTask('build', ['svgmerge','exec:generate','copy:index','copy:svgs','copy:svgList','useminPrepare','concat:generated','uglify:generated','usemin']);
