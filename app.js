@@ -50,7 +50,7 @@
 					if(index>-1){
 						fontAwesomeList[i]=fontAwesomeList[i].split('.')[0];
 					}
-					fontAwesomeList[i]='dist/fontAwesomes/font-awesome-out.svg#' + fontAwesomeList[i];
+					fontAwesomeList[i]='dist/font-awesome/font-awesome-out.svg#' + fontAwesomeList[i];
 				}
 				$scope.fontAwesomeList=fontAwesomeList;
 			});
