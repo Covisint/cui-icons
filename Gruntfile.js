@@ -1,6 +1,10 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   grunt.initConfig({
+    watch:{
+      files:'src/**/*.svg',
+      tasks:['build']
+    },
     copy: {
       index: {
         src: 'index.html',
@@ -25,12 +29,14 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
             src : [
-                '*.html',
-                '*.js',
-                '*.css'
+                '**/*.html',
+                '**/*.js',
+                '**/*.css',
+                'dist/**/*.svg'
             ]
         },
         options: {
+          watchTask:true,
           online: true,
           server:{
             baseDir: './'
@@ -74,7 +80,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['svgmerge','exec:generate','browserSync:dev']);
+  grunt.registerTask('default', ['browserSync:dev','watch']);
   grunt.registerTask('build', ['svgmerge','exec:generate','copy:index','copy:svgs','copy:svgList','useminPrepare','concat:generated','uglify:generated','usemin']);
   grunt.registerTask('demo',['browserSync:demo']);
 };
