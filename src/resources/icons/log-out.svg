@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47" height="48" viewBox="0 0 47 48" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Log_out
+  </title>
+  <g id="log-out" fill="none" fill-rule="evenodd">
+    <path d="M23.665 1.118C11.04 1.118.808 11.35.808 23.975c0 12.624 10.233 22.857 22.857 22.857 12.62 0 22.857-10.233 22.857-22.86 0-12.62-10.236-22.854-22.857-22.854z" stroke="currentColor"/>
+    <path d="M34.28 23.857l-5.94-5.115v3.07h-6.928v4.09h6.93v3.07l5.94-5.115zm-8.277-8.89V12.43h-9.83c-1.353 0-2.46 1.14-2.46 2.538v17.778c0 1.397 1.107 2.54 2.46 2.54h9.83v-2.54h-9.83V14.968h9.83z" fill="currentColor"/>
+  </g>
+</svg>
