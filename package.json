@@ -1,8 +1,28 @@
 {
   "name": "cui-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Icon Library for core Covisint UI use.",
   "main": "Gruntfile.js",
+  "homepage": "https://github.com/thirdwavellc/cui-icons",
+  "license": "ISC",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thirdwavellc/cui-icons"
+  },
+  "bugs": {
+    "url": "https://github.com/thirdwavellc/cui-icons/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "scripts/npm-postversion"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.thirdwavellc.com/content/repositories/cui-npm/"
+  },
+  "files": [
+    "build/"
+  ],
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-exec": "^0.4.6",
@@ -22,18 +42,5 @@
     "grunt-svg-toolkit": "^0.1.1",
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.3.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thirdwavellc/cui-icons"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thirdwavellc/cui-icons/issues"
-  },
-  "homepage": "https://github.com/thirdwavellc/cui-icons"
+  }
 }
