@@ -1,6 +1,6 @@
 {
   "name": "cui-icons",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://github.com/thirdwavellc/cui-icons",
   "description": "Svg package for CUI products.",
   "main": "dist/",
