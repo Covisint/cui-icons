@@ -1,8 +1,11 @@
 {
   "name": "cui-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Icon Library for core Covisint UI use.",
   "main": "Gruntfile.js",
+  "author": "Thirdwave, LLC",
+  "license": "ISC",
+  "homepage": "https://github.com/thirdwavellc/cui-icons",
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-exec": "^0.4.6",
@@ -30,10 +33,14 @@
     "type": "git",
     "url": "https://github.com/thirdwavellc/cui-icons"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/thirdwavellc/cui-icons/issues"
   },
-  "homepage": "https://github.com/thirdwavellc/cui-icons"
+  "publishConfig": {
+    "registry": "http://nexus.thirdwavellc.com/content/repositories/cui-npm/"
+  },
+  "files":
+    [
+      "dist/"
+    ]
 }
