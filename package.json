@@ -17,9 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "scripts/npm-postversion"
   },
-  "publishConfig": {
-    "registry": "http://nexus.thirdwavellc.com/content/repositories/cui-npm/"
-  },
   "files": [
     "dist/"
   ],
