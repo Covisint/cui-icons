@@ -4,7 +4,7 @@
   "description": "Icon Library for core Covisint UI use.",
   "main": "Gruntfile.js",
   "homepage": "https://github.com/thirdwavellc/cui-icons",
-  "license": "ISC",
+  "license": "LicenseRef-LICENSE",
   "author": "Thirdwave, LLC",
   "repository": {
     "type": "git",
