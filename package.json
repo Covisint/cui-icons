@@ -1,5 +1,5 @@
 {
-  "name": "cui-icons",
+  "name": "@covisint/cui-icons",
   "version": "1.0.2",
   "description": "Icon Library for core Covisint UI use.",
   "main": "Gruntfile.js",
