@@ -1,8 +1,9 @@
 #!/bin/bash
 
-bower install
 npm install
 grunt svgmerge
 node generateSvgList.js
 grunt build
 mvn clean deploy -U
+npm version patch
+npm publish

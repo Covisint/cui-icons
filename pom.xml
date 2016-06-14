@@ -11,14 +11,14 @@
 
   <groupId>com.covisint.cui</groupId>
   <artifactId>cui-icons</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
-          <descriptor>assembly.xml</descriptor>
+          <descriptor>src/assembly/tar.xml</descriptor>
           <finalName>cui-icons-${project.version}</finalName>
         </configuration>
         <executions>
