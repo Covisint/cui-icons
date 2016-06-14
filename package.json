@@ -1,5 +1,5 @@
 {
-  "name": "cui-icons",
+  "name": "@covisint/cui-icons",
   "version": "1.1.1",
   "description": "Icon Library for core Covisint UI use.",
   "main": "dist/",
