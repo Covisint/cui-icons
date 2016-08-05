@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    Invite
+  </title>
+  <g id="close-with-shadow" fill="none" fill-rule="evenodd">
+    <g id="Close">
+      <g id="Oval-73" transform="translate(3 1)">
+        <use fill="#000" filter="url(#filter-2)" xlink:href="#path-1"/>
+        <use fill="currentColor" xlink:href="#path-1"/>
+      </g>
+      <path d="M26.022 20.672l4.006-4.006c.788-.787.787-2.052.006-2.833l-.195-.195c-.788-.787-2.05-.778-2.834.006L23 17.65l-4.006-4.006c-.787-.788-2.052-.787-2.833-.006l-.194.195c-.788.787-.778 2.05.006 2.833l4.006 4.006-4.006 4.006c-.788.787-.787 2.053-.006 2.833l.195.196c.788.788 2.05.778 2.834-.006L23 23.695l4.006 4.005c.787.788 2.052.787 2.833.006l.194-.195c.788-.786.778-2.048-.006-2.832l-4.006-4.006z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
