@@ -2,7 +2,42 @@
   "name": "@covisint/cui-icons",
   "version": "1.4.0",
   "description": "Icon Library for core Covisint UI use.",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Thirdwave, LLC",
+    "email": "support@thirdwavellc.com",
+    "url": "http://www.thirdwavellc.com/"
+  },
+  "contibutors": [
+    {
+      "name": "Ricardo Marques"
+    },
+    {
+      "name": "Piotr Bogun"
+    },
+    {
+      "name": "Shane Ardell"
+    },
+    {
+      "name": "Orin Fink",
+      "email": "orin.fink@thirdwavellc.com"
+    }
+  ],
   "main": "dist/",
+  "homepage": "https://github.com/thirdwavellc/cui-icons",      
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thirdwavellc/cui-icons"
+  },
+  "bugs": {
+    "url": "https://github.com/thirdwavellc/cui-icons/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/"
+  ],  
   "devDependencies": {
     "grunt-svg-toolkit": "^0.1.1",
     "grunt-exec": "^0.4.6",
@@ -19,21 +54,5 @@
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.3.0",
     "angular": "~1.4.7"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thirdwavellc/cui-icons"
-  },
-  "files": [
-    "dist/"
-  ],
-  "author": "Thirdwave, llc.",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thirdwavellc/cui-icons/issues"
-  },
-  "homepage": "https://github.com/thirdwavellc/cui-icons"
+  }
 }
