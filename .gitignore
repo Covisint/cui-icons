@@ -10,3 +10,4 @@ nvm.env
 build/
 target/
 *.iml
+/nbproject/private/
