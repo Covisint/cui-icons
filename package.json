@@ -1,6 +1,6 @@
 {
   "name": "@covisint/cui-icons",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Icon Library for core Covisint UI use.",
   "license": "SEE LICENSE IN LICENSE",
   "author": {
@@ -24,7 +24,7 @@
     }
   ],
   "main": "dist/",
-  "homepage": "https://github.com/thirdwavellc/cui-icons",      
+  "homepage": "https://github.com/thirdwavellc/cui-icons",
   "repository": {
     "type": "git",
     "url": "https://github.com/thirdwavellc/cui-icons"
@@ -37,7 +37,7 @@
   },
   "files": [
     "dist/"
-  ],  
+  ],
   "devDependencies": {
     "grunt-svg-toolkit": "^0.1.1",
     "grunt-exec": "^0.4.6",
