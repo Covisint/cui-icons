@@ -3,6 +3,10 @@
     New
   </title>
   <g id="new" transform="translate(2 2)">
+    <g id="Oval-73" transform="translate(3 1)">
+      <use fill="#000" filter="url(#filter-2)" xlink:href="#path-1"/>
+      <use fill="currentColor" xlink:href="#path-1"/>
+    </g>
     <circle cx="22" cy="22" r="22" fill="currentColor" />
     <path fill="FFFFFF" d="M24.665 19.335v-7.108c0-1.462-1.193-2.662-2.665-2.662-1.47 0-2.665 1.192-2.665 2.662v7.108h-7.108c-1.462 0-2.662 1.193-2.662 2.665 0 1.47 1.192 2.665 2.662 2.665h7.108v7.108c0 1.462 1.193 2.662 2.665 2.662 1.47 0 2.665-1.192 2.665-2.662v-7.108h7.108c1.462 0 2.662-1.193 2.662-2.665 0-1.47-1.192-2.665-2.662-2.665h-7.108z"/>
   </g>
