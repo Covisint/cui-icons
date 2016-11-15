@@ -31,3 +31,7 @@ Adding Icons to the Covisint UI Icon Library
 * Your icons will need to follow a certain syntax to be accepted by the build task:
   1. No hardcoded fills (or it won't be customizable with css)
   2. All the paths should be wrapped in a group with an id equal to its filename. (everything outside of that group will be ignored)
+
+* Sometimes programs like Adobe Illustrator and Sketch do not export SVGs in the cleanest way, often leaving artifacts that are unnecessary at best and buggy at worst. Here are a few programs we use to clean up those exported SVGs:
+  1. [SVGOMG](https://jakearchibald.github.io/svgomg/) - This is essentially SVGO with a lovely interface (Big thanks to Jake Archibald!). We tried utilizing SVGO in the project via a Grunt task, but often had failures we had to manually clean up. 
+  2. [Iconic's SVG Exporter Script](https://github.com/iconic/illustrator-svg-exporter) - Adding this script to Illustrator streamlines the export process and class naming of paths for icon customization.
